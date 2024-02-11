@@ -6,7 +6,7 @@ src_dir = './images'  # Replace with your actual path
 target_dir = './img_low_res'  # Replace with your actual path
 
 # Function to compress images
-def compress_images(src_folder, target_folder, quality=20):
+def compress_images(src_folder, target_folder, quality=40):
     # Get all the image files in the source folder
     for image_name in os.listdir(src_folder):
         # The full file path
