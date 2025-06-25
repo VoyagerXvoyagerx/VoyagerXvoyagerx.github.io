@@ -1,0 +1,165 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx} % Times New Roman风格的serif字体
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+
+% 超链接设置
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=green
+}
+
+% 自定义命令
+\newcommand{\datecolumn}[1]{\textbf{#1}}
+\newcommand{\papertitle}[1]{\textbf{#1}}
+\newcommand{\journalname}[1]{\textit{\textbf{#1}}}
+
+% 去除页码
+\pagestyle{empty}
+
+\begin{document}
+
+% 标题
+\begin{center}
+    {\Huge \textbf{Yijie Zheng}} \\[0.5em]
+    \href{mailto:zhengyijie23@mails.ucas.ac.cn}{zhengyijie23@mails.ucas.ac.cn}
+\end{center}
+
+\vspace{1em}
+
+% 教育经历
+\section*{EDUCATION}
+\vspace{-0.5em}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.5em}
+\begin{tabularx}{\textwidth}{@{}r@{\hspace{1em}}X@{}}
+\datecolumn{2019-2023} & \textbf{Beijing Jiaotong University} \\
+& B.S. in Communication Engineering \\
+& GPA: 3.95/4 \\[0.5em]
+
+\datecolumn{2023-2026} & \textbf{University of Chinese Academy of Sciences} \\
+\datecolumn{(expected)} & M.S. in Remote Sensing \\
+& GPA: 3.81/4 \\
+\end{tabularx}
+
+\vspace{1em}
+
+% 研究经历
+\section*{RESEARCH EXPERIENCE}
+
+\subsection*{Remote Sensing Vision-Language Models}
+\papertitle{InstructSAM: A Training-Free Framework for Instruction-Oriented Remote Sensing Object Recognition} 
+\href{https://arxiv.org/abs/2505.15818}{[arXiv]} 
+\href{https://voyagerxvoyagerx.github.io/InstructSAM}{[Project]} \\
+\textbf{Yijie Zheng}, Weijie Wu, Qingyun Li, Xuehui Wang, Xu Zhou, Aiai Ren, Jun Shen, Long Zhao, Guoqing Li, Xue Yang, \journalname{under review}, 2025.
+\begin{itemize}[leftmargin=1em]
+    \item Proposed InstructSAM, a novel training-free framework that enables object counting, detection, and segmentation in remote sensing imagery through user-defined instructions.
+    \item Demonstrated SOTA performance in open-vocabulary, open-ended, and open-subclass settings.
+    \item Reduced inference time from linear to near-constant.
+\end{itemize}
+
+\vspace{0.5em}
+
+\subsection*{Biodiversity Conservation with Remote Sensing}
+\papertitle{Beluga Whale Detection from Satellite Imagery with Point Labels}
+\href{https://arxiv.org/abs/2505.12066}{[paper]}
+\href{https://github.com/VoyagerXvoyagerx/beluga-seeker}{[code]}
+\href{https://www.2025.ieeeigarss.org/view_paper.php?PaperNum=2430&SessionID=1426}{[IGARSS Session]} \\
+\textbf{Yijie Zheng}, Jinxuan Yang, Yu Chen, Yaxuan Wang, Yihang Lu, Guoqing Li, in \journalname{Proc. IEEE Int. Geosci. Remote Sens. Symp. (IGARSS)}, 2025.
+\begin{itemize}[leftmargin=1em]
+    \item Winner of the 4th IEEE GRSS Student Grand Challenge (funded \$6000).
+    \item Collaborated with Dr. Cortney Watt from Fisheries and Oceans Canada and supervised by Prof. Adriano Camps, Prof. Paolo Gamba, and Dr. Tianlin Wang from IEEE GRSS.
+    \item Developed an automated pipeline for labeling beluga whales and harp seal bounding boxes using point annotations.
+\end{itemize}
+
+\vspace{0.5em}
+
+\noindent\papertitle{A Review of Remote Sensing Techniques for Cetacean Monitoring} \\
+In preparation, invited to submit to \journalname{IEEE J. Sel. Topics Appl. Earth Observ. Remote Sens.}
+
+\vspace{0.5em}
+
+\subsection*{Ionospheric Remote Sensing}
+\papertitle{Segmentation and Edge Detection for Ionogram Automatic Scaling}
+\href{https://ieeexplore.ieee.org/document/9955166/}{[paper]}
+\href{https://github.com/VoyagerXvoyagerx/Ionogram}{[code]} \\
+\textbf{Yijie Zheng}, Xiaoqing Wang, Yefei Luo, Hao Tian, Ziwei Chen, in \journalname{Proc. Int. Conf. Mach. Learn., Cloud Comput. Intell. Min. (MLCCIM)}, 2022.
+\begin{itemize}[leftmargin=1em]
+    \item Enhanced ionogram structure segmentation with edge detection, significantly improving the accuracy of ionogram scaling.
+\end{itemize}
+
+\vspace{0.5em}
+
+\papertitle{A Benchmark for Ionogram Real-Time Object Detection Based on MMYOLO}
+\href{https://mmyolo.readthedocs.io/en/dev/recommended_topics/application_examples/ionogram_detection.html}{[doc]}
+\href{https://github.com/VoyagerXvoyagerx/Ionogram_scaling}{[code]} \\
+\textbf{Yijie Zheng}, \journalname{MMYOLO Application Examples}, 2023
+\begin{itemize}[leftmargin=1em]
+    \item Formulated ionogram parameter extraction as an object detection problem.
+    \item Established a deep learning benchmark for ionospheric structure detection and parameter extraction.
+\end{itemize}
+
+\vspace{1em}
+
+% 教学经历
+\section*{TEACHING EXPERIENCE}
+\begin{itemize}[leftmargin=1em]
+    \item \datecolumn{Spring 2023} Teaching Assistant, OpenMMLab AI Camp, Shanghai AI Lab
+\end{itemize}
+
+\vspace{1em}
+
+% 竞赛
+\section*{COMPETITIONS}
+\begin{itemize}[leftmargin=1em]
+    \item \datecolumn{2024} \textbf{3rd place} in \href{https://challenge.xfyun.cn/topic/info?type=identification-retrieval}{High-Resolution Remote Sensing Image Content Recognition and Retrieval Challenge} held by iFLYTEK
+    \item \datecolumn{2023} \textbf{Winner} in 4th IEEE GRSS Student Grand Challenge
+    \item \datecolumn{2022} \textbf{Honorable Mentioned} in Mathematical Contest in Modeling
+    \item \datecolumn{2022} \textbf{1st prize} in MathorCup Mathematical Modeling Challenge
+    \item \datecolumn{2020} \textbf{1st prize} in National College Students Mathematics Competition
+\end{itemize}
+
+\vspace{1em}
+
+% 奖项和荣誉
+\section*{AWARDS AND HONORS}
+\begin{tabularx}{\textwidth}{@{}r@{\hspace{1em}}X@{}}
+\datecolumn{2020, 2022} & \textbf{National Scholarship} \\
+& Awarded by the Ministry of Education of the People's Republic of China. Acceptance rate: 1\%. \\[0.5em]
+
+\datecolumn{2023} & \textbf{Highest Honors, BS Communication Engineering, BJTU} \\
+& Graduated from Beijing Jiaotong University with a BS with highest honors. \\[0.5em]
+
+\datecolumn{2023} & \textbf{OpenMMLab Active Contributor} \\
+& Awarded for the significant contributions to the OpenMMLab ecosystem. \\
+\end{tabularx}
+
+\vspace{1em}
+
+% 学术服务
+\section*{ACADEMIC SERVICE}
+\begin{itemize}[leftmargin=1em]
+    \item \datecolumn{2024-2025} Vice Chair, IEEE GRSS Student Branch Chapter (Beijing Section)
+    \item \datecolumn{2025} Secretary, \href{https://casa2025.casconf.cn/}{3rd International Training Courses on Space Technology for Global Challenges}
+    \item \datecolumn{2025} Member, International Whaling Commission Scientific Committee correspondence group on ``Satellites to Study Whales''
+    \item \datecolumn{2023-2024} Chair, Scientific Expedition Association of University of Chinese Academy of Sciences
+\end{itemize}
+
+\vspace{1em}
+
+% 语言技能
+\section*{LANGUAGE SKILLS}
+\begin{itemize}[leftmargin=1em]
+    \item Chinese (native), English (working proficiency), Deutsch (learning)
+\end{itemize}
+
+\end{document}
